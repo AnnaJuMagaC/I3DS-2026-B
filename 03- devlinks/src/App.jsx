@@ -1,17 +1,16 @@
-import './App.css'
-import Link from './components/Link/Link'
-import LinkSocial from './components/LinkSocial/LinkSocial'
-import Perfil from './components/Perfil/Perfil'
-import Rodape from './components/Rodape/Rodape'
+import "./App.css";
+import Link from "./components/Link/Link";
+import LinkSocial from "./components/LinkSocial/LinkSocial";
+import Perfil from "./components/Perfil/Perfil";
+import Rodape from "./components/Rodape/Rodape";
 
 function App() {
-
   return (
-    <div id='App'>
-      
+    <div id="App">
       <Perfil fotoPerfil={"https:placehold.co/100"}>Anna Maga</Perfil>
 
-      <div className='switch'>       
+      <div className="switch">
+        botão switch
         <ul>
           <Link url={""}>Inscreva-se</Link>
         </ul>
@@ -25,17 +24,20 @@ function App() {
           <Link url={""}>Conheça o curso DEV</Link>
         </ul>
       </div>
-      <div className='links'></div>
-      <div className='linksSocial'>
-      <LinkSocial url={"https://github.com/"} icon={"logo-github"} />
-      <LinkSocial url={"https://www.instagram.com/"} icon={"logo-instagram"} />
-      <LinkSocial url={"https://www.youtube.com/"} icon={"logo-youtube"} />
-      <LinkSocial url={"https://github.com/"} icon={"logo-linkedin"} />
+      <div className="links"></div>
+      <div className="linksSocial">
+        <LinkSocial url={"https://github.com/"} icon={"logo-github"} />
+        <LinkSocial
+          url={"https://www.instagram.com/"}
+          icon={"logo-instagram"}
+        />
+        <LinkSocial url={"https://www.youtube.com/"} icon={"logo-youtube"} />
+        <LinkSocial url={"https://github.com/"} icon={"logo-linkedin"} />
       </div>
-      
+
       <Rodape>NajuMagaC</Rodape>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
