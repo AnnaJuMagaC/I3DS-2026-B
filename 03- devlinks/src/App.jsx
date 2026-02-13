@@ -9,22 +9,17 @@ function App() {
     <div id="App">
       <Perfil fotoPerfil={"https:placehold.co/100"}>Anna Maga</Perfil>
 
-      <div className="switch">
-        botão switch
+      <div className="switch">botão switch </div>
+
+      <div className="Link">
         <ul>
           <Link url={""}>Inscreva-se</Link>
-        </ul>
-        <ul>
           <Link url={""}>Minha Playlist</Link>
-        </ul>
-        <ul>
           <Link url={""}>Me pague uma paçoca!</Link>
-        </ul>
-        <ul>
           <Link url={""}>Conheça o curso DEV</Link>
         </ul>
       </div>
-      <div className="links"></div>
+
       <div className="linksSocial">
         <LinkSocial url={"https://github.com/"} icon={"logo-github"} />
         <LinkSocial
