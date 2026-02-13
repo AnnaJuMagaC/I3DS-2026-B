@@ -57,6 +57,6 @@
     }
 
     .light #Switch button {
-        animation: slide-in 0.2 forwards;
+        animation: slide-in 0.2s forwards;
     }
 }
