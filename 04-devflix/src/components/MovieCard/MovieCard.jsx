@@ -28,7 +28,10 @@ const MovieCard = (props) => {
       </div>
 
       {isModalOpen && (
-        <MovieDescription apiUrl={props.apiUrl} click={toggleModal} />
+        <MovieDescription 
+        apiUrl={props.apiUrl} 
+        movieId = {props.imdbID}
+        click={toggleModal} />
       )}
     </>
   );
