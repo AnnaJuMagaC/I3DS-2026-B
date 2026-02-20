@@ -9,7 +9,7 @@ import MovieCard from "./components/MovieCard/MovieCard";
 
 const App = () => {
   const [movies, setMovies] = useState([]);
-  const [search, setSearch] = useState("")
+  const [search, setSearch] = useState("");
 
   //Utilizando uma CHAVE de API do arquivo .env
   const apiKey = import.meta.env.VITE_OMDB_API_KEY;
@@ -25,8 +25,8 @@ const App = () => {
   };
 
   useEffect(() => {
-    searchMovies("Avatar");
-  }, []); /*Termo para pesquisar ao carregar o site*/
+    searchMovies("Avatar"); // termo para pesquina ao carregar o site
+  }, []);
 
   return (
     <div id="App">
@@ -37,10 +37,12 @@ const App = () => {
       />
 
       <div className="search">
-        <input 
-        onChange={(e) => setSearch(e.target.value)}
-        type="text" 
-        placeholder="Pesquise por filmes" />
+        <input
+          onKeyDown={(e) => e.key === "Enter" && searchMovies(search)}
+          onChange={(e) => setSearch(e.target.value)}
+          type="text"
+          placeholder="Pesquise por filmes"
+        />
         <img
           onClick={() => searchMovies(search)}
           src={lupa}
@@ -55,7 +57,7 @@ const App = () => {
           ))}
         </div>
       ) : (
-        <h2 className="empty">Filme não Encontrado😥</h2>
+        <h2 className="empty">😢 Filme não encontrado 😢</h2>
       )}
 
       <Rodape link={"https://github.com/ProfCastello"}>ProfCastello</Rodape>
