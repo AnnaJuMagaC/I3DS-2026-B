@@ -25,7 +25,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    searchMovies("Avatar"); // termo para pesquina ao carregar o site
+    searchMovies("Hulk"); // termo para pesquina ao carregar o site
   }, []);
 
   return (
@@ -53,7 +53,7 @@ const App = () => {
       {movies?.length > 0 ? (
         <div className="container">
           {movies.map((movie, index) => (
-            <MovieCard key={index} {...movie} />
+            <MovieCard key={index} {...movie} apiUrl={apiUrl} />
           ))}
         </div>
       ) : (
