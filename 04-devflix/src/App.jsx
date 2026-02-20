@@ -23,9 +23,9 @@ const App = () => {
     setMovies(data.Search);
   };
 
-  useEffect(() => {
+  /*useEffect(() => {
     searchMovies("Avatar");
-  }, []);
+  }, []);*/
 
   return (
     <div id="App">
@@ -47,8 +47,8 @@ const App = () => {
         ))}
       </div>
       )  :  (
-        <h2>Filme não Encontrado😥</h2>
-     )};
+        <h2 className="empty">Filme não Encontrado😥</h2>
+     )}
 
       <Rodape link={"https://github.com/ProfCastello"}>ProfCastello</Rodape>
     </div>
