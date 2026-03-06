@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-import logo from "./assets/NajulhaFlix.png";
-import lupa from "./assets/search.png";
+import logo from "./assets/devflix.png";
+import lupa from "./assets/search.svg";
 
 import Rodape from "./components/Rodape/Rodape";
 import MovieCard from "./components/MovieCard/MovieCard";
@@ -26,7 +26,7 @@ const App = () => {
 
   useEffect(() => {
     (async () => {
-      await searchMovies("Spider Man"); // termo para pesquina ao carregar o site
+      await searchMovies("Hulk"); // termo para pesquina ao carregar o site
     }) ();
   }, []);
 
