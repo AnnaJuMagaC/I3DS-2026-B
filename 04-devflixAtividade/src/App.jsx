@@ -145,7 +145,7 @@ const App = () => {
         </h2>
       )}
 
-      <Rodape link={"https://github.com/ProfCastello"}>YasBiaze</Rodape>
+      <Rodape link={"https://github.com/AnnaJuMagaC"}>NajuMagaC</Rodape>
     </div>
   );
 };
