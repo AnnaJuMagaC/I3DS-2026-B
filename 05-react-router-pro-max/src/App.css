@@ -1,0 +1,52 @@
+.navbar {
+  background-color: rgb(28, 61, 24);
+
+  &  .container{
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+ 
+    & a {
+    padding: 0px;
+    text-decoration: none;
+    color: rgb(255, 252, 237);
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    }
+
+    & a:hover {
+    color: rgb(140, 180, 121);
+    }
+    
+  }
+}
+
+.containerApp{
+  min-height: 90vh;
+}
+
+body {
+  background-color: rgb(255, 252, 237);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  gap: 20px;
+  padding: 20px;
+  color: rgb(255, 252, 237);
+  background-color: rgb(37, 37, 37);
+  font-size: 20px;
+  & a {
+    text-decoration: none;
+    color: rgb(140, 180, 121);
+    font-weight: bold;
+  }
+}
